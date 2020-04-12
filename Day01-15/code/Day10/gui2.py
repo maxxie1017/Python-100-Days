@@ -28,6 +28,7 @@ top.title('五子棋')
 top.resizable(False, False)
 # 设置窗口置顶
 top.wm_attributes('-topmost', 1)
+
 canvas = tkinter.Canvas(top, width=600, height=600, bd=0, highlightthickness=0)
 canvas.bind('<Button-1>', mouse_evt_handler)
 canvas.create_rectangle(0, 0, 600, 600, fill='yellow', outline='white')
