@@ -29,12 +29,15 @@ print(str[5:8].isdecimal())
 list = ['床前明月光', '疑是地上霜', '举头望明月', '低头思故乡']
 print('-'.join(list))
 sentence = 'You go your way I will go mine'
-words_list = sentence.split()
+#words_list = sentence.split()
+words_list = sentence.split(' ')
 print(words_list)
 email = '     jackfrued@126.com          '
 print(email)
-print(email.strip())
-print(email.lstrip())
+print(email.strip('     jack'))  # frued@126.com
+# Return a copy of the string with leading and trailing whitespace remove.
+# If chars is given and not None, remove characters in chars instead.
+print(email.lstrip())  # Return a copy of the string with leading whitespace removed.
 
 # 将文本放入系统剪切板中
 pyperclip.copy('老虎不发猫你当我病危呀')
